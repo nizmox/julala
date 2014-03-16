@@ -1,0 +1,47 @@
+body {
+  background-color: #5E5ED8;
+}
+
+#container {
+  max-width: 960px;
+  margin: 20px auto;
+  background-color: white;
+  border: 5px solid #0E0E74;
+}
+
+h1 {
+  text-align: center;
+  background-color: #0E0E74;
+  color: white;
+  /*font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }*/
+}
+
+#content{
+  padding: 10px;
+}
+
+nav {
+  background-color: black;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #7E7ED8;
+}
+
+p.legal {
+  text-align: center;
+  font-size: 9px;
+}
+
+/* HOME PAGE */
+div.enrollments {
+  border: 3px solid green;
+  text-align: center;
+}
