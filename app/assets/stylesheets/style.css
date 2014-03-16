@@ -1,23 +1,28 @@
+/* http://colorschemedesigner.com/#3R11TqVu-w0w0 */
+
 body {
-  background-color: #5E5ED8;
+  background-color: #5E75D4;
 }
 
 #container {
   max-width: 960px;
   margin: 20px auto;
   background-color: white;
-  border: 5px solid #0E0E74;
+  border: 5px solid #38467B;
 }
 
 h1 {
+  margin: 0;
+  padding: 15px 0;
   text-align: center;
-  background-color: #0E0E74;
+  background-color: #0E216D;
   color: white;
   /*font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }*/
 }
 
 #content{
   padding: 10px;
+  /*box-shadow: 2px 2px 5px rgb(0,0,0,0.2);*/
 }
 
 nav {
@@ -32,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #7E7ED8;
+  color: #7D8ED4;
 }
 
 p.legal {
