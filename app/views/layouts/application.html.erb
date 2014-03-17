@@ -5,27 +5,36 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <!-- <link href='http://fonts.googleapis.com/css?family=Averia+Sans+Libre:300,700' rel='stylesheet' type='text/css'> -->
+  <!-- Font Awesome -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Heading and Nav fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <nav>
-    <!-- <a href="/">Home</a> -->
-    <%= link_to 'Home', home_path %>
-    <a href="/about">About Julala</a>
-    <a href="/tuition/japanese">Japanese Tuition</a>
-    <a href="/tuition/music">Music Tuition</a>
-    <a href="/calendar">Calendar</a>
-    <a href="/contact">Contact</a>
-  </nav>
+  <div id="nav-container">
+    <nav>
+      <%= link_to 'Home', home_path %>
+      <a href="/about"><i class="fa fa-question-circle"></i> About Julala</a>
+      <a href="/japanese"><i class="fa fa-comment-o"></i> Japanese Tuition</a>
+      <a href="/music"><i class="fa fa-music"></i> Music Tuition</a>
+      <a href="/calendar"><i class="fa fa-calendar"></i> Calendar</a>
+      <a href="/contact"><i class="fa fa-envelope"></i> Contact</a>
+    </nav>
+  </div>
 
   <div id="container">
-    <h1>Julala's Tuition</h1>
+    <h1>Julala's <span class="color">Tuition</span></h1>
+
     <div id="content">
-      <%= yield %>
+      <h2 id="content-heading"><%= @title %></h2>
+
+      <div id="content-main">
+        <%= yield %>
+      </div> <!-- content-main -->
 
       <p class="legal">93 Made Pty Ltd © 2009-14. All Rights Reserved. ABN 43 130 700 284 (ACN 130 700 284)</p>
-    </div>
-  </div>
+    </div> <!-- content -->
+  </div> <!-- container -->
 
 </body>
 </html>

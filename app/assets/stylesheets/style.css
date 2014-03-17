@@ -1,11 +1,27 @@
 /* http://colorschemedesigner.com/#3R11TqVu-w0w0 */
 
+/* NEW DESIGN */
+/* http://sixrevisions.com/design-showcase-inspiration/50-beautiful-clean-and-simple-web-designs/ */
+/* nav background, second heading (span) - rgb(33,42,56) - very dark blue PREVIOUSLY: #38467B; */
+/* background color - rgb(237,237,237) - gray */
+/* primary heading, page headings - rgb(22,145,216) - light blue */
+/* border color - white */
+/* link hover background - rgb(62,76,95) */
+/* text color - rgb(141,152,156) - dark gray */
+
 body {
-  background-color: #5E75D4;
+  background-color: rgb(237,237,237);
+}
+
+/* NAVIGATION */
+
+#nav-container {
+  background-color: rgb(33,42,56);
 }
 
 nav {
-  background-color: black;
+  margin: 0 auto;
+  width: 960px;
 }
 
 nav a {
@@ -13,29 +29,48 @@ nav a {
   padding: 10px;
   text-decoration: none;
   color: white;
+  font-family: 'Montez', cursive;
+  font-size: 20px;
 }
 
 nav a:hover {
-  color: #7D8ED4;
+  background-color: rgb(62,76,95);
 }
+
+/* CONTAINER */
 
 #container {
   max-width: 960px;
   margin: 20px auto;
-  background-color: white;
-  border: 5px solid #38467B;
 }
 
 h1 {
   margin: 0;
-  padding: 15px 0;
-  text-align: center;
-  background-color: #0E216D;
-  color: white;
+  padding: 15px 10px;
+  color: rgb(22,145,216);
+  font-size: 60px;
+  font-family: 'Montez', cursive;
+}
+
+h1 span.color {
+  color: rgb(33,42,56);
 }
 
 #content{
+  border: 5px solid white;
+}
+
+h2#content-heading {
+  margin: 0;
+  padding: 10px 0;
+  background-color: white;
+  text-align: center;
+  color: rgb(22,145,216);
+}
+
+#content-main {
   padding: 10px;
+  /*color: rgb(141,152,156);*/
 }
 
 p.legal {
@@ -44,6 +79,33 @@ p.legal {
 }
 
 /* HOME PAGE */
+
+img.image {
+  display:inline-block;
+  height: 108px;
+  /* BLACK AND WHITE */
+  -webkit-filter: saturate(0%);
+  filter: saturate(0%);
+  /* REMOVES WHITE SPACE FROM BOTTOM OF IMAGE */
+  vertical-align:text-bottom;
+}
+
+img.image:hover {
+  -webkit-filter: saturate(100%);
+  filter: saturate(100%);
+}
+
+div.tuition {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+div.tuition-text {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
 div.enrollments {
   border: 3px solid green;
   text-align: center;

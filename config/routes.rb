@@ -3,14 +3,14 @@ Julala::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index', :as => 'home'
+  root 'pages#home', :as => 'home'
 
-  get 'about' => 'home#about'
-  get 'contact' => 'home#contact'
-  get 'calendar' => 'home#calendar'
+  get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
+  get 'calendar' => 'pages#calendar'
 
-  get 'tuition/music' => 'tuition#music' #, as: => 'music'
-  get 'tuition/japanese' => 'tuition#japanese' #, as: => 'japanese'
+  get 'music' => 'pages#music' #, as: => 'music'
+  get 'japanese' => 'pages#japanese' #, as: => 'japanese'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
