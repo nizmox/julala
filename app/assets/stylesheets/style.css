@@ -7,7 +7,7 @@
 /* primary heading, page headings - rgb(22,145,216) - light blue */
 /* border color - white */
 /* link hover background - rgb(62,76,95) */
-/* text color - rgb(141,152,156) - dark gray */
+/* text color - rgb(92,92,92) - dark gray */
 
 body {
   background-color: rgb(237,237,237);
@@ -58,6 +58,7 @@ h1 span.color {
 
 #content{
   border: 5px solid white;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 }
 
 h2#content-heading {
@@ -70,13 +71,17 @@ h2#content-heading {
 
 #content-main {
   padding: 10px;
-  /*color: rgb(141,152,156);*/
 }
 
 p.legal {
+  background-color: white;
+  padding: 5px 0 0 0;
+  margin: 0;
   text-align: center;
   font-size: 9px;
 }
+
+/* ------------------------------------------------------------------------------------- */
 
 /* HOME PAGE */
 
@@ -95,18 +100,65 @@ img.image:hover {
   filter: saturate(100%);
 }
 
+a.tuition-link {
+  text-decoration: none;
+  /*color: gray;*/
+  color: rgb(92,92,92); /*rgb(53,53,53);*/
+}
+
 div.tuition {
+  display: inline-block;
   background-color: white;
   margin-bottom: 10px;
+  width: 645px;
+}
+
+/*a.tuition-link:hover {*/
+div.tuition:hover {
+  background-color: rgb(62,76,95);
+  color: white;
 }
 
 div.tuition-text {
   display: inline-block;
   vertical-align: top;
   padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.album {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+div.album img {
+  width: 200px;
 }
 
 div.enrollments {
   border: 3px solid green;
   text-align: center;
+}
+
+/* OTHER PAGES */
+div.white-box {
+  margin: 0;
+  padding: 10px;
+  background-color: white;
+}
+
+div.white-box p {
+  padding: 0;
+  margin: 10px;
+}
+
+/* CALENDAR */
+table {
+  margin: 0 auto;
+}
+
+td {
+  border: 5px solid white;
+  padding: 5px 20px 5px 5px;
 }
