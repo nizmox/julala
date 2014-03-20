@@ -9,33 +9,46 @@
 /* link hover background - rgb(62,76,95) */
 /* text color - rgb(92,92,92) - dark gray */
 
+//Color Scheme
+$dark-blue: rgb(33,42,56);
+$light-blue: rgb(22,145,216);
+
+$gray: rgb(237,237,237);
+$dark-gray: rgb(92,92,92);
+$blue-gray: rgb(62,76,95);
+
+//Custom Font
+@font-face {
+    font-family: "julala";
+    src: url(CATCB__.TTF) format("truetype");
+}
+
 body {
-  background-color: rgb(237,237,237);
+  background-color: $gray;
 }
 
 /* NAVIGATION */
 
 #nav-container {
-  background-color: rgb(33,42,56);
+  background-color: $dark-blue;
 }
 
 nav {
   margin: 0 auto;
   width: 960px;
-}
+  a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montez', cursive;
+    font-size: 20px;
+  }//a
 
-nav a {
-  display: inline-block;
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-  font-family: 'Montez', cursive;
-  font-size: 20px;
-}
-
-nav a:hover {
-  background-color: rgb(62,76,95);
-}
+  a:hover {
+    background-color: $light-blue;
+  } //a:hover
+}//nav
 
 /* CONTAINER */
 
@@ -47,13 +60,14 @@ nav a:hover {
 h1 {
   margin: 0;
   padding: 15px 10px;
-  color: rgb(22,145,216);
+  color: $light-blue;
   font-size: 60px;
-  font-family: 'Montez', cursive;
+  //font-family: 'Montez', cursive;
+  font-family: 'julala', arial;
 }
 
 h1 span.color {
-  color: rgb(33,42,56);
+  color: $dark-blue;
 }
 
 #content{
@@ -66,7 +80,7 @@ h2#content-heading {
   padding: 10px 0;
   background-color: white;
   text-align: center;
-  color: rgb(22,145,216);
+  color: $light-blue;
 }
 
 #content-main {
@@ -92,18 +106,17 @@ img.image {
   -webkit-filter: saturate(0%);
   filter: saturate(0%);
   /* REMOVES WHITE SPACE FROM BOTTOM OF IMAGE */
-  vertical-align:text-bottom;
-}
+  vertical-align: text-bottom;
 
-img.image:hover {
-  -webkit-filter: saturate(100%);
-  filter: saturate(100%);
-}
+    &:hover {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+  }//:hover
+}//img.image
 
 a.tuition-link {
   text-decoration: none;
-  /*color: gray;*/
-  color: rgb(92,92,92); /*rgb(53,53,53);*/
+  color: $dark-gray;
 }
 
 div.tuition {
@@ -111,13 +124,12 @@ div.tuition {
   background-color: white;
   margin-bottom: 10px;
   width: 645px;
-}
 
-/*a.tuition-link:hover {*/
-div.tuition:hover {
-  background-color: rgb(62,76,95);
-  color: white;
-}
+  &:hover {
+    background-color: $blue-gray;
+    color: white;
+  }//:hover
+}//div.tuition
 
 div.tuition-text {
   display: inline-block;
@@ -130,28 +142,29 @@ div.album {
   display: inline-block;
   vertical-align: top;
   width: 200px;
-}
+  padding-left: 10px;
 
-div.album img {
-  width: 200px;
-}
+  img {
+    width: 200px;
+  }//img
 
-div.enrollments {
-  border: 3px solid green;
-  text-align: center;
-}
+  p {
+    text-align: center;
+    font-size: 10px;
+  }
+}//div.album
 
 /* OTHER PAGES */
 div.white-box {
   margin: 0;
   padding: 10px;
   background-color: white;
-}
 
-div.white-box p {
-  padding: 0;
-  margin: 10px;
-}
+  p {
+    padding: 0;
+    margin: 10px;
+  }//p
+}//div.white-box
 
 /* CALENDAR */
 table {

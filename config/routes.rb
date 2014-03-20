@@ -5,7 +5,7 @@ Julala::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pages#home', :as => 'home'
 
-  get 'about' => 'pages#about'
+  get 'about' => 'pages#about', :as => :about
   get 'contact' => 'pages#contact'
   get 'calendar' => 'pages#calendar'
 
