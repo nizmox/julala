@@ -17,11 +17,9 @@ $gray: rgb(237,237,237);
 $dark-gray: rgb(60,60,60);
 $blue-gray: rgb(62,76,95);
 
-//Custom Font
-// @font-face {
-//     font-family: "julala";
-//     src: url(CATCB__.TTF) format("truetype");
-// }
+//Font
+//$font: 'Montez', cursive;
+$font: 'The Girl Next Door', cursive;
 
 body {
   background-color: $gray;
@@ -41,7 +39,7 @@ nav {
     padding: 10px;
     text-decoration: none;
     color: white;
-    font-family: 'Montez', cursive;
+    font-family: $font;
     font-size: 20px;
   }//a
 
@@ -61,8 +59,8 @@ h1 {
   margin: 0;
   padding: 15px 10px;
   color: $light-blue;
-  font-size: 80px;
-  font-family: 'Montez', cursive;
+  font-size: 60px;
+  font-family: $font;
 }
 
 h1 span.color {
